@@ -13,7 +13,7 @@ const navLinks = [
     { name: 'How to Pay', href: '#' },
     { name: 'Careers', href: '#' },
     { name: 'Help', href: '#' },
-    { name: 'Blog', href: '#' },
+    { name: 'Blog', href: '/blog' },
 ];
 
 export function Navbar() {

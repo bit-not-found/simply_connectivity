@@ -3,9 +3,23 @@ import Image from 'next/image';
 import { Facebook, Twitter, Instagram, Linkedin, Github } from 'lucide-react';
 
 const footerLinks = {
-    Company: ['About', 'Careers', 'Blog', 'Press'],
-    Support: ['Help Centre', 'Contact Us', 'Network Status', 'Coverage Map'],
-    Legal: ['Privacy Policy', 'Terms of Service', 'Acceptable Use Policy'],
+    Company: [
+        { name: 'About', href: '#' },
+        { name: 'Careers', href: '#' },
+        { name: 'Blog', href: '/blog' },
+        { name: 'Press', href: '#' }
+    ],
+    Support: [
+        { name: 'Help Centre', href: '#' },
+        { name: 'Contact Us', href: '#' },
+        { name: 'Network Status', href: '#' },
+        { name: 'Coverage Map', href: '#' }
+    ],
+    Legal: [
+        { name: 'Privacy Policy', href: '#' },
+        { name: 'Terms of Service', href: '#' },
+        { name: 'Acceptable Use Policy', href: '#' }
+    ],
 };
 
 const socialLinks = [
@@ -44,9 +58,9 @@ export function Footer() {
                             <h3 className="text-foreground font-bold mb-4">{category}</h3>
                             <ul className="space-y-2">
                                 {links.map((link) => (
-                                    <li key={link}>
-                                        <Link href="#" className="text-muted-foreground hover:text-primary text-sm transition-colors">
-                                            {link}
+                                    <li key={link.name}>
+                                        <Link href={link.href} className="text-muted-foreground hover:text-primary text-sm transition-colors">
+                                            {link.name}
                                         </Link>
                                     </li>
                                 ))}

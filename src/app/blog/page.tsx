@@ -1,32 +1,25 @@
-'use client';
-
-import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, Calendar, Clock, User } from 'lucide-react';
+import Image from 'next/image';
+import { ArrowRight, Calendar, Clock } from 'lucide-react';
 import { blogPosts } from '@/data/blogPosts';
-import { Button } from './Button';
+import { Button } from '@/components/Button';
 
-export function BlogSection() {
+export default function BlogIndexPage() {
     return (
-        <section className="pt-6 pb-6 bg-secondary/10 relative overflow-hidden">
+        <main className="min-h-screen bg-background pt-32 pb-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
-                    <div className="max-w-2xl">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full text-primary font-bold text-sm mb-6">
-                            <span>Latest Updates</span>
-                        </div>
-                        <h2 className="text-3xl md:text-4xl font-bold mb-4">Stay Connected & Informed</h2>
-                        <p className="text-muted-foreground text-lg">
-                            Tips, tricks, and insights to help you get the most out of your internet connection.
+                {/* Header */}
+                <div className="mb-12">
+
+                    <div className="max-w-3xl">
+                        <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Blog</h1>
+                        <p className="text-xl text-muted-foreground">
+                            Stay up to date with the latest news, tips, and insights about connectivity, gaming, and digital life in South Africa.
                         </p>
                     </div>
-                    <Link href="/blog">
-                        <Button variant="outline" className="hidden md:flex gap-2">
-                            View All Posts <ArrowRight className="w-4 h-4" />
-                        </Button>
-                    </Link>
                 </div>
 
+                {/* Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {blogPosts.map((post) => (
                         <article
@@ -97,15 +90,7 @@ export function BlogSection() {
                         </article>
                     ))}
                 </div>
-
-                <div className="mt-8 text-center md:hidden">
-                    <Link href="/blog">
-                        <Button variant="outline" className="w-full gap-2">
-                            View All Posts <ArrowRight className="w-4 h-4" />
-                        </Button>
-                    </Link>
-                </div>
             </div>
-        </section>
+        </main>
     );
 }
