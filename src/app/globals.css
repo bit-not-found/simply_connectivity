@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+:root {
+  /* Light Mode - White Background */
+  --background: #ffffff;
+  --foreground: #0f172a;
+
+  /* Brand Colors - Blue & Light Blue */
+  --primary: #0066FF;
+  --primary-foreground: #ffffff;
+
+  /* Secondary/Accents */
+  --secondary: #e0f2fe;
+  --secondary-foreground: #0066FF;
+
+  /* UI Elements */
+  --card: #ffffff;
+  --card-foreground: #020617;
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #0066FF;
+}
+
+.dark {
+  /* Dark Mode - Dark Blue Background */
+  --background: #020617;
+  --foreground: #f8fafc;
+
+  /* Brand Colors */
+  --primary: #3b82f6;
+  --primary-foreground: #ffffff;
+
+  /* Secondary/Accents */
+  --secondary: #1e293b;
+  --secondary-foreground: #38bdf8;
+
+  /* UI Elements */
+  --card: #0f172a;
+  --card-foreground: #f8fafc;
+  --border: #1e293b;
+  --input: #1e293b;
+  --ring: #3b82f6;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
