@@ -33,8 +33,8 @@ export function ContactSection() {
                                 <div>
                                     <h3 className="font-bold text-lg mb-1">Email Us</h3>
                                     <p className="text-muted-foreground mb-2">For general inquiries and support</p>
-                                    <a href="mailto:support@simpleconnect.co.za" className="text-primary font-medium hover:underline">
-                                        support@simpleconnectivity.co.za
+                                    <a href="mailto:info@simpleconnectivity.co.za" className="text-primary font-medium hover:underline">
+                                        info@simpleconnectivity.co.za
                                     </a>
                                 </div>
                             </div>
