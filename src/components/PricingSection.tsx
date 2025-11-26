@@ -5,34 +5,26 @@ import { Button } from './Button';
 
 const plans = [
     {
-        name: "1 Hour",
+        name: "1 Day",
         price: "R5",
-        duration: "60 Minutes",
+        duration: "24 Hours",
         features: ["Unlimited Data", "High Speed Access", "Instant Activation"],
         popular: false,
         color: "bg-card"
     },
     {
-        name: "24 Hours",
-        price: "R30",
-        duration: "1 Day",
+        name: "1 Week",
+        price: "R99",
+        duration: "7 Days",
         features: ["Unlimited Data", "High Speed Access", "Instant Activation", "Best for Day Trips"],
         popular: true,
         color: "bg-primary/5 border-primary"
     },
     {
-        name: "7 Days",
-        price: "R60",
-        duration: "1 Week",
+        name: "1 Month",
+        price: "R149",
+        duration: "30 Days",
         features: ["Unlimited Data", "High Speed Access", "Instant Activation", "Great Value"],
-        popular: false,
-        color: "bg-card"
-    },
-    {
-        name: "30 Days",
-        price: "R180",
-        duration: "1 Month",
-        features: ["Unlimited Data", "High Speed Access", "Instant Activation", "Maximum Savings"],
         popular: false,
         color: "bg-card"
     }
@@ -52,7 +44,7 @@ export function PricingSection() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {plans.map((plan, index) => (
                         <div
                             key={index}
