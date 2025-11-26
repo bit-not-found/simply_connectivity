@@ -8,10 +8,9 @@ import { Button } from './Button';
 import { ModeToggle } from './ModeToggle';
 
 const navLinks = [
-    { name: 'About', href: '#' },
-    { name: 'Hotspot', href: '#' },
-    { name: 'How to Pay', href: '#' },
-    { name: 'Careers', href: '#' },
+    { name: 'Hotspot', href: '/hotspot' },
+    { name: 'Residential', href: '/residential' },
+    { name: 'Business', href: '/business' },
     { name: 'Help', href: '/help' },
     { name: 'Blog', href: '/blog' },
 ];
