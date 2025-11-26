@@ -5,7 +5,6 @@ import { PricingSection } from "@/components/PricingSection";
 import { Steps } from "@/components/Steps";
 import { EntertainmentMarquee } from "@/components/EntertainmentMarquee";
 import { StressFreeSection } from "@/components/StressFreeSection";
-import { BlogSection } from "@/components/BlogSection";
 import { ContactSection } from "@/components/ContactSection";
 
 export default function Home() {
@@ -18,7 +17,6 @@ export default function Home() {
       <Steps />
       <EntertainmentMarquee />
       <StressFreeSection />
-      <BlogSection />
       <ContactSection />
     </div>
   );
