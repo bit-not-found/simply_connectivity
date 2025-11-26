@@ -12,7 +12,7 @@ const navLinks = [
     { name: 'Hotspot', href: '#' },
     { name: 'How to Pay', href: '#' },
     { name: 'Careers', href: '#' },
-    { name: 'Help', href: '#' },
+    { name: 'Help', href: '/help' },
     { name: 'Blog', href: '/blog' },
 ];
 
