@@ -75,7 +75,7 @@ export function ContactSection() {
                             <input type="hidden" name="_subject" value="New Contact Form Submission - Simple Connectivity" />
                             <input type="hidden" name="_template" value="table" />
                             <input type="hidden" name="_captcha" value="false" />
-                            <input type="hidden" name="_next" value="https://simpleconnectivity.vercel.app/contact" />
+                            <input type="hidden" name="_next" value="https://simplyconnectivity.vercel.app/contact" />
                             <input type="hidden" name="_autoresponse" value="Thank you for reaching out to Simple Connectivity. We have received your message and will get back to you shortly. Below is a copy of your submission for your records." />
 
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
