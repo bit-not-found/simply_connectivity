@@ -4,21 +4,20 @@ import { Facebook, Twitter, Instagram, Linkedin, Github } from 'lucide-react';
 
 const footerLinks = {
     Company: [
-        { name: 'About', href: '#' },
-        { name: 'Careers', href: '#' },
-        { name: 'Blog', href: '/blog' },
-        { name: 'Press', href: '#' }
+        { name: 'Hotspot', href: '/hotspot' },
+        { name: 'Residential', href: '/residential' },
+        { name: 'Business', href: '/business' },
+        { name: 'Blog', href: '/blog' }
     ],
     Support: [
-        { name: 'Help Centre', href: '#' },
-        { name: 'Contact Us', href: '#' },
-        { name: 'Network Status', href: '#' },
-        { name: 'Coverage Map', href: '#' }
+        { name: 'Help Centre', href: '/help' },
+        { name: 'Contact Us', href: '/contact' },
+        { name: 'Coverage Map', href: '/coverage' }
     ],
     Legal: [
-        { name: 'Privacy Policy', href: '#' },
-        { name: 'Terms of Service', href: '#' },
-        { name: 'Acceptable Use Policy', href: '#' }
+        { name: 'Privacy Policy', href: '/privacy-policy' },
+        { name: 'Terms of Service', href: '/terms-of-service' },
+        { name: 'Acceptable Use Policy', href: '/acceptable-use-policy' }
     ],
 };
 

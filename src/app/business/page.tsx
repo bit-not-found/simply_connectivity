@@ -1,5 +1,7 @@
 'use client';
 
+import Link from 'next/link';
+
 import { Button } from '@/components/Button';
 import { Check, Building2, ShieldCheck, Zap, Server, Phone, ArrowDown, ArrowRight } from 'lucide-react';
 
@@ -8,21 +10,21 @@ const businessPackages = [
         name: 'Business Basic',
         speed: '10Mbps',
         price: 299,
-        features: ['Uncapped Data', '1:1 Contention Ratio', '1 Static IP', 'Business Hours Support', 'Free Installation'],
+        features: ['Uncapped Data', '1:1 Contention Ratio', '1 Static IP', 'Business Hours Support'],
         recommended: false,
     },
     {
         name: 'Business Pro',
         speed: '30Mbps',
         price: 399,
-        features: ['Uncapped Data', '1:1 Contention Ratio', '5 Static IPs', '24/7 Priority Support', '99.9% Uptime SLA', 'Free Installation'],
+        features: ['Uncapped Data', '1:1 Contention Ratio', '5 Static IPs', '24/7 Priority Support', '99.9% Uptime SLA'],
         recommended: true,
     },
     {
         name: 'Enterprise',
         speed: '60Mbps',
         price: 699,
-        features: ['Uncapped Data', '1:1 Contention Ratio', 'Range of Static IPs', 'Dedicated Account Manager', '99.9% Uptime SLA', 'Free Installation'],
+        features: ['Uncapped Data', '1:1 Contention Ratio', 'Range of Static IPs', 'Dedicated Account Manager', '99.9% Uptime SLA'],
         recommended: false,
     },
 ];
@@ -75,13 +77,15 @@ export default function BusinessPage() {
                             View Packages
                             <ArrowDown className="h-5 w-5" />
                         </Button>
-                        <Button
-                            variant="outline"
-                            className="px-8 py-6 text-lg rounded-full border-2 hover:bg-secondary/50 transition-all hover:-translate-y-1 gap-2"
-                        >
-                            Contact Sales
-                            <ArrowRight className="h-5 w-5" />
-                        </Button>
+                        <Link href="/contact">
+                            <Button
+                                variant="outline"
+                                className="px-8 py-6 text-lg rounded-full border-2 hover:bg-secondary/50 transition-all hover:-translate-y-1 gap-2"
+                            >
+                                Contact Sales
+                                <ArrowRight className="h-5 w-5" />
+                            </Button>
+                        </Link>
                     </div>
                 </div>
             </section>
@@ -165,9 +169,11 @@ export default function BusinessPage() {
                         We offer tailored connectivity solutions for large enterprises, including dedicated fibre lines,
                         redundant links, and multi-site networking.
                     </p>
-                    <Button size="lg" className="px-8 rounded-full">
-                        Contact Enterprise Sales
-                    </Button>
+                    <Link href="/contact">
+                        <Button size="lg" className="px-8 rounded-full">
+                            Contact Enterprise Sales
+                        </Button>
+                    </Link>
                 </div>
             </section>
         </div>
