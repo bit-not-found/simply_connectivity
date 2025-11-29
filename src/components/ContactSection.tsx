@@ -75,8 +75,9 @@ export function ContactSection() {
                             <input type="hidden" name="_subject" value="New Contact Form Submission - Simple Connectivity" />
                             <input type="hidden" name="_template" value="table" />
                             <input type="hidden" name="_captcha" value="false" />
-                            <input type="hidden" name="_next" value="https://simplyconnectivity.vercel.app/success" />
+                            <input type="email" name="email" placeholder="Email Address" />
                             <input type="hidden" name="_autoresponse" value="Thank you for reaching out to Simple Connectivity. We have received your message and will get back to you shortly. Below is a copy of your submission for your records." />
+                            <input type="hidden" name="_next" value="https://simplyconnectivity.vercel.app/success" />
 
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="space-y-2">
@@ -111,7 +112,7 @@ export function ContactSection() {
                                     name="email"
                                     required
                                     className="w-full px-4 py-3 rounded-xl bg-background border border-input focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
-                                    placeholder="john@example.com"
+                                    placeholder="Email Address"
                                 />
                             </div>
 
@@ -150,6 +151,6 @@ export function ContactSection() {
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     );
 }
